@@ -1,0 +1,6 @@
+Make name:BMW
+Model name:320i
+Base price:30000
+Option:Color,Transmission,
+Color:red~0,green~10
+Transmission:automatic~0,manual~-100

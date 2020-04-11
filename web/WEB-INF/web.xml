@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+
+    <listener>
+        <listener-class>Server.RunServerListener</listener-class>
+    </listener>
+
+    <servlet>
+        <servlet-name>ShowSelectedServlet</servlet-name>
+        <servlet-class>Servlet.ShowSelectedJspServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ShowSelectedServlet</servlet-name>
+        <url-pattern>/showSelected</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ConfigureCarJspServlet</servlet-name>
+        <servlet-class>Servlet.ConfigureCarJspServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ConfigureCarJspServlet</servlet-name>
+        <url-pattern>/configureCar</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>IndexJspServlet</servlet-name>
+        <servlet-class>Servlet.IndexJspServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>IndexJspServlet</servlet-name>
+        <url-pattern>/</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>GetMakeAndModelNameServlet</servlet-name>
+        <servlet-class>Servlet.GetMakeAndModelNameServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>GetMakeAndModelNameServlet</servlet-name>
+        <url-pattern>/getMakeAndModel</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>GetChoicesInfServlet</servlet-name>
+        <servlet-class>Servlet.GetChoicesInfServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>GetChoicesInfServlet</servlet-name>
+        <url-pattern>/getChoicesInf</url-pattern>
+    </servlet-mapping>
+
+</web-app>
+
